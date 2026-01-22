@@ -46,7 +46,7 @@ export default function QuizBlock3() {
   const rightKeys = useMemo(() => ["C", "D", "L", "K"], []);
 
   const [q1, setQ1] = useState({ first: "", second: "" });
-  const q1Ok = q1.first === "alt" && q1.second === "L";
+  const q1Ok = q1.first === "ctrl" && q1.second === "L";
 
   // Q2 (radio): .git
   const q2Options = useMemo(
@@ -101,8 +101,8 @@ export default function QuizBlock3() {
     padding: "8px 10px",
     borderRadius: 10,
     border: "1px solid rgba(255,255,255,0.22)",
-    background: "rgba(255,255,255,0.08)",
-    color: "#fff",
+    background: "rgba(255, 255, 255, 0.8)",
+    color: "#000000ff",
     outline: "none",
     minWidth: 140,
   };
