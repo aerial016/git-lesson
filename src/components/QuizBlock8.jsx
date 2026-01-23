@@ -81,11 +81,11 @@ export default function QuizBlock8() {
 
   // Q2 (text): -f
   const [q2, setQ2] = useState("");
-  const q2Ok = normalizeCmd(q2) === "-r";
+  const q2Ok = normalizeCmd(q2) === "-f";
 
   // Q3 (text): -r
   const [q3, setQ3] = useState("");
-  const q3Ok = normalizeCmd(q3) === "-n";
+  const q3Ok = normalizeCmd(q3) === "-r";
 
   // Q4 (radio): git clean -f
   const q4Options = useMemo(
